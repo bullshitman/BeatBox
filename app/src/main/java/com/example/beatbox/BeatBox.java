@@ -1,0 +1,7 @@
+package com.example.beatbox;
+
+public class BeatBox {
+    private static final String TAG = "BeatBox";
+    private static final String SOUNDS_FOLDER = "sample_sounds";
+
+}
