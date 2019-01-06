@@ -1,8 +1,10 @@
 package com.example.beatbox;
 
-public class Sound {
+
+class Sound {
     private String mAssetPath;
     private String mName;
+    private Integer mSoundId;
 
     Sound(String assetPath) {
         mAssetPath = assetPath;
@@ -11,11 +13,19 @@ public class Sound {
         mName = fileName.replace(".wav", "");
     }
 
-    public String getAssetPath() {
+    String getAssetPath() {
         return mAssetPath;
     }
 
     String getName() {
         return mName;
+    }
+
+    void setSoundId(int soundId) {
+        mSoundId = soundId;
+    }
+
+    Integer getSoundId() {
+        return mSoundId;
     }
 }
